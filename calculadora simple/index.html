@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="text/javascript"></script>
+    <title>Calculadora sencilla</title>
+</head>
+
+<body>
+    <div id="calculadora">
+        <label for="input-number"><input type="text" id="input-number" name="input-number" disabled></label>
+        <div id="botones">
+            <button onclick="reset()">C</button>
+            <button onclick="borrar()">⬅</button>
+            <button onclick="operacion('%')">%</button>
+            <button onclick="operacion('/')">/</button><br>
+            <button onclick="escribe(7)">7</button>
+            <button onclick="escribe(8)">8</button>
+            <button onclick="escribe(9)">9</button>
+            <button onclick="operacion('x')">x</button><br>
+            <button onclick="escribe(4)">4</button>
+            <button onclick="escribe(5)">5</button>
+            <button onclick="escribe(6)">6</button>
+            <button onclick="operacion('-')">-</button><br>
+            <button onclick="escribe(1)">1</button>
+            <button onclick="escribe(2)">2</button>
+            <button onclick="escribe(3)">3</button>
+            <button onclick="operacion('+')">+</button><br>
+            <button onclick="escribe(0)">0</button>
+            <button onclick="escribe('.')">.</button>
+            <button onclick="resultado()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
