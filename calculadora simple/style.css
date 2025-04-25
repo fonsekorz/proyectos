@@ -47,7 +47,6 @@ button {
   padding: 10px;
 }
 button:active {
-  border: transparent;
-  border-radius: 50%;
+  border-color: transparent;
   background-color: rgba(48, 126, 87, 0.699);
 }
