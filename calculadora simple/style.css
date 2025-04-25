@@ -10,7 +10,7 @@ body {
   align-items: center;
   padding: 40px 20px;
   width: 100%;
-  gap: 40px;
+  gap: 10px;
   background-color: grey;
 }
 #calculadora {
@@ -45,4 +45,9 @@ button {
   width: 45px;
   margin: 5px;
   padding: 10px;
+}
+button:active {
+  border: transparent;
+  border-radius: 50%;
+  background-color: rgba(48, 126, 87, 0.699);
 }
