@@ -10,30 +10,38 @@
 </head>
 
 <body>
-    <div id="calculadora">
-        <label for="input-number"><input type="text" id="input-number" name="input-number" disabled></label>
-        <div id="botones">
-            <button onclick="reset()">C</button>
-            <button onclick="borrar()">⬅</button>
-            <button onclick="operacion('%')">%</button>
-            <button onclick="operacion('/')">/</button><br>
-            <button onclick="escribe(7)">7</button>
-            <button onclick="escribe(8)">8</button>
-            <button onclick="escribe(9)">9</button>
-            <button onclick="operacion('x')">x</button><br>
-            <button onclick="escribe(4)">4</button>
-            <button onclick="escribe(5)">5</button>
-            <button onclick="escribe(6)">6</button>
-            <button onclick="operacion('-')">-</button><br>
-            <button onclick="escribe(1)">1</button>
-            <button onclick="escribe(2)">2</button>
-            <button onclick="escribe(3)">3</button>
-            <button onclick="operacion('+')">+</button><br>
-            <button onclick="escribe(0)">0</button>
-            <button onclick="escribe('.')">.</button>
-            <button onclick="resultado()">=</button>
+    <header>
+        <h1>CALCULADORA BÁSICA</h1>
+    </header>
+    <main>
+        <div id="calculadora">
+            <label for="input-number"><input type="text" id="input-number" name="input-number" disabled placeholder="0"></label>
+            <div id="botones">
+                <button onclick="reset()">CE</button>
+                <button onclick="borrar()">⌫</button>
+                <button onclick="operacion('%')">%</button>
+                <button onclick="operacion('/')">/</button><br>
+                <button onclick="mostrar(7)">7</button>
+                <button onclick="mostrar(8)">8</button>
+                <button onclick="mostrar(9)">9</button>
+                <button onclick="operacion('x')">x</button><br>
+                <button onclick="mostrar(4)">4</button>
+                <button onclick="mostrar(5)">5</button>
+                <button onclick="mostrar(6)">6</button>
+                <button onclick="operacion('-')">-</button><br>
+                <button onclick="mostrar(1)">1</button>
+                <button onclick="mostrar(2)">2</button>
+                <button onclick="mostrar(3)">3</button>
+                <button onclick="operacion('+')">+</button><br>
+                <button onclick="mostrar(0)">0</button>
+                <button onclick="mostrar('.')">.</button>
+                <button onclick="resultado()">=</button>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>Hecho por Fonseca - 2025</p>
+    </footer>
 </body>
 
 </html>
