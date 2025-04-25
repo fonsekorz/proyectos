@@ -74,3 +74,12 @@ function borrar() {
   }
   input.value = input.value.slice(0, -1);
 }
+function signo() {
+  const input = document.getElementById("input-number");
+  let valor = input.value;
+  valor = valor.replace(",", ".");
+  let numero = parseFloat(valor);
+  if (isNaN(numero)) return;
+  numero *= -1;
+  input.value = numero.toString();
+}
