@@ -15,7 +15,9 @@
     </header>
     <main>
         <div id="calculadora">
-            <label for="input-number"><input type="text" id="input-number" name="input-number" disabled placeholder="0"></label>
+            <div id="show">
+                <input type="text" id="input-number" name="input-number" disabled placeholder="0">
+            </div>
             <div id="botones">
                 <button onclick="reset()">CE</button>
                 <button onclick="borrar()">⌫</button>
@@ -33,9 +35,10 @@
                 <button onclick="mostrar(2)">2</button>
                 <button onclick="mostrar(3)">3</button>
                 <button onclick="operacion('+')">+</button><br>
+                <button onclick="signo()">+/-</button>
                 <button onclick="mostrar(0)">0</button>
                 <button onclick="mostrar('.')">.</button>
-                <button onclick="resultado()">=</button>
+                <button onclick="resultado()" class="result">=</button>
             </div>
         </div>
     </main>
